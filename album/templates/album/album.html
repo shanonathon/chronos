@@ -1,0 +1,15 @@
+{% extends "album/base.html" %}
+
+{% block content %}
+<div id="wrapper">
+<ul>
+    <h1>{{ album.title }}</h1>
+    <ul>
+        {% for img in images.object_list %}
+            <a href="{% url 'album:image_view' pk=img.id %}" ><img border="0" alt=""
+                src="{{ media_url }}{{ img.thumbnail2.name }}" class="album_images" /></a>
+        {% endfor %}
+    </ul>
+</ul>
+</div>
+{% endblock %}

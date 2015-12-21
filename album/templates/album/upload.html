@@ -1,0 +1,15 @@
+{% extends "album/base.html" %}
+{% load staticfiles %}
+
+
+
+{% block content %}
+
+<form action="{{ action }}" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+        </form>
+<input class="btn btn-default" type="submit" value="Save" />
+</form>
+
+        {% endblock %}

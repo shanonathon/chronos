@@ -1,0 +1,58 @@
+
+{% load staticfiles %}
+<link href="{% static 'album/css/lavish.css' %}" media="all" rel="stylesheet">
+<link href="{% static 'album/css/login.css' %}" rel="stylesheet">
+<script src="{% static 'album/js/bootstrap.min.js' %}"></script>
+
+
+
+
+
+<form method="post" action="/login/">
+<body>
+
+<div id="background">
+      <div id="tint">
+
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+      <br>
+      </body>
+    <div class="form-group"><label class="control-label" for="id_username"></label><input class="form-control" id="id_username" class="userbox" maxlength="254" name="username" placeholder="Username" required="required" title="" type="text" /></div>
+      
+    <div class="form-group"><label class="control-label" for="id_password"></label><input class="form-control" id="id_password" class="passbox" name="password" placeholder="Password" required="required" title="" type="password" /></div>
+
+    <div class="form-group"><input type="submit" class="btn btn-info" value="login"></div>
+    <div class="form-group">Request access <a href="mailto:shaunseaver@me.com">here</a></div>
+
+</div>
+</div>
+
+
+
+
+
+
+</body>
+{% csrf_token %}
+
+
+<input type="hidden" name="next" value="" />
+
+</form>
+
+
+
+
+

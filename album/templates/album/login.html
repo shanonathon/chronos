@@ -1,0 +1,43 @@
+
+
+
+
+
+{% if form.errors %}
+<p>Your username and password didn't match. Please try again.</p>
+{% endif %}
+
+
+	Seaver Family Photos
+
+
+<form method="post" action="{% url 'django.contrib.auth.views.login' %}">
+{% csrf_token %}
+
+
+
+
+<body>
+     
+
+    {{username}}
+      
+    {{password}}
+
+
+</body>
+
+{% block content %}
+{% endblock %}
+
+
+<input type="submit" class="btn btn-info" value="Submit Button">
+
+
+<input type="hidden" name="next" value="{{ next }}"  />
+
+</form>
+
+
+
+

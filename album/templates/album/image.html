@@ -1,0 +1,37 @@
+{% extends "album/base.html" %}
+
+{% block content %}
+
+
+<!-- Image -->
+
+
+<div class="row row-centered">
+{% if image.get_prev %}
+<div class= "col-md-1" col-centered>
+<a href="/image/{{ image.get_prev.id }}/" class="btn btn-info">Previous</a> 
+</div>
+{% endif %}
+<div class= "col-md-10" col-centered>
+    <ul class="image_datail">
+        <img border="0" alt="" src="{{ media_url }}{{ image.image.name }}" width="900" />
+    </ul>
+    </div>
+    {% if image.get_next %}
+<div class= "col-md-1" col-centered>
+<a href="/image/{{ image.get_next.id }}/" class="btn btn-info">Next</a> 
+</div>
+{% endif %}
+
+</div>
+<br>
+<a href="{{ media_url }}{{ image.image.name }}" download class="btn btn-info" id="download_button">Download</a>
+
+
+
+
+  
+
+
+
+{% endblock %}

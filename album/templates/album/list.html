@@ -1,0 +1,29 @@
+{% extends "album/base.html" %}
+{% block content %}
+
+
+
+<div id="wrapper">
+<div class="container" id="album_list">
+  <div class="row">
+  <div class="col-lg-12">
+        <!-- Albums  -->
+        <ul>
+            {% for album in albums.object_list %}
+                            <div class="album_title"><a href="{% url 'album:album_view' pk=album.pk %}">{{ album.title }}</a><br><img border="0" alt="" 
+                            src="{{ media_url }}{{ album.cover }}" id="cover_image" /></div>
+
+                <br>
+                <br>
+            {% endfor %}
+        </ul>
+</div>
+</div>
+</div>
+
+
+    </div>
+<br>
+<br>
+
+{% endblock %}

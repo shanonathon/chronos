@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'MyriadThin';
+    src: url(../fonts/MyriadThin.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+a.dropdown-toggle {
+	padding-top: 17px;
+	padding-bottom: 18px;
+	line-height: 50px;
+	position: relative;
+	padding-right: 15px;
+	padding-left: 15px;
+	color:#777;
+}
+
+.album_images{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+.row-centered {
+    text-align:center;
+}
+
+h1 {
+	text-align: center;
+	position: relative;
+	font-family: 'MyriadThin';
+}
+
+h3 {
+	text-align: center;
+	position: relative;
+	font-family: 'MyriadThin';
+}
+
+body{
+	font-family: 'MyriadThin';
+	background: url('/static/album/img/flowers.jpg');
+
+    background-repeat: no-repeat;
+    background-size: 120% auto;
+}
+
+.album_title{
+	font-size:16pt;
+}
+
+#download_button{
+margin: 0 auto;
+display:block;
+text-align:center;
+width:100px;
+}
+
+
+
+.nav li a{
+	background-color: #FFD9CB;
+    color: gray;
+}
+
+.dropdown-toggle{
+		background-color: #FFD9CB;
+    color: gray;
+}
+
+.navbar-default{
+	background-color: #FFD9CB;
+    color: gray;
+    border-color: #000000;	
+}
+
+#wrapper {
+    background: #ffffff;
+    width: 90%;
+    margin: 0 auto;
+    font-style: 18pt;
+    padding:2px;
+    text-align: center;
+
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px; 
+}
+
+p{
+	text-align: center;
+} 
+
+#cover_image{
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #fad9f5;
+    color:gray;
+}

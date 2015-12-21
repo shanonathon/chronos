@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+    font-family:"MyriadUltra";
+    font-size:45pt;
+    color:#000000;
+}
+
+#background{
+background-image: url("/static/album/img/cora.jpg");
+    background-size: 130% auto;
+    background-repeat: no-repeat;
+
+    height:100%;
+    width:100%;
+
+}
+
+#tint{
+
+}
+
+.form-group{
+margin-left: 400px;
+width:150px;
+color:#000000;
+
+
+}
+
+.btn{
+width:240px;
+position: relative;
+background-color:#ff7f50;
+
+}
